@@ -9,18 +9,18 @@ import torch
 from tqdm import tqdm
 from copy import deepcopy
 
-from src.preprocessing import get_one_zernikegram
-from src.utils.conversions import cartesian_to_spherical__numpy
-from src.so3_cnn.so3.functional import make_dict, put_dict_on_device
-from src.utils.protein_naming import ind_to_ol_size, ol_to_ind_size, aa_to_one_letter, one_letter_to_aa
-from src.training.utils import one_hot_encode, NUM_AAS
+from .src.preprocessing import get_one_zernikegram
+from .src.utils.conversions import cartesian_to_spherical__numpy
+from .src.so3_cnn.so3.functional import make_dict, put_dict_on_device
+from .src.utils.protein_naming import ind_to_ol_size, ol_to_ind_size, aa_to_one_letter, one_letter_to_aa
+from .src.training.utils import one_hot_encode, NUM_AAS
 
-from src.training.utils import general_model_init
-from src.training.data import get_data_irreps
-from src.training.losses import loss_per_chi_angle
+from .src.training.utils import general_model_init
+from .src.training.data import get_data_irreps
+from .src.training.losses import loss_per_chi_angle
 
-from src.sidechain_reconstruction.biopython_internal_coords.full_structure_reconstructor import FullStructureReconstructor
-from src.sidechain_reconstruction.biopython_internal_coords.constants import CHI_ANGLES
+from .src.sidechain_reconstruction.biopython_internal_coords.full_structure_reconstructor import FullStructureReconstructor
+from .src.sidechain_reconstruction.biopython_internal_coords.constants import CHI_ANGLES
 
 from typing import *
 
