@@ -43,18 +43,13 @@ python setup.py install
 
 to install the code in this repo as a package.
 
-If you're going to make edits to the code, run
+<details>
+<summary>Install instructions updates</summary>
 
+**Update from 2/25/25:** The installation via pip in non-editable mode currently causes an error when working outside of the hpacker directory. Currently, a quick fix is to install the repo package in editable mode as:
 ```bash
 pip install -e .
 ```
-
-so you can test your changes.
-
-<details>
-<summary>Prior install instructions</summary>
-
-**Update from 2/25/25:** The installation via pip in non-editable mode currently causes an error when working outside of the hpacker directory. Currently, a quick fix is to install the repo package in editable mode.
 
 **Update from 3/13/2026:** Install package via "python3 setup.py install"
 
