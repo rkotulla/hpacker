@@ -53,6 +53,7 @@ so you can test your changes.
 
 **Update from 2/25/25:** The installation via pip in non-editable mode currently causes an error when working outside of the hpacker directory. Currently, a quick fix is to install the repo package in editable mode.
 
+**Update from 3/13/2026:** Install package via "python3 setup.py install"
 
 ## Usage
 
